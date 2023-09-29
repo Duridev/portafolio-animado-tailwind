@@ -15,7 +15,7 @@ module.exports = {
       },
       backgroundImage:{
         "open-menu": "url('../assets/img/menu-alt-3.svg')",
-        "close-menu": "url('../assets/img/close.svg')"
+        "close-menu": "url('../assets/img/close-outline.svg')"
       }
     },
   },
