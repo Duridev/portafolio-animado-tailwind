@@ -6,6 +6,10 @@
     h1, h2, h3, h5, h6 {
         @apply font-bold;
     }
+
+    input, textarea{
+        @apply bg-background-color border-gray-color;
+    }
 }
 
 @layer components {
