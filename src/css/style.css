@@ -570,6 +570,10 @@ input, textarea {
   inset: 0px;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -612,6 +616,14 @@ input, textarea {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .block {
@@ -1047,6 +1059,18 @@ input, textarea {
 .focus\:ring-green-color:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(39 174 96 / var(--tw-ring-opacity));
+}
+
+.peer\/menu:checked ~ .peer-checked\/menu\:fixed {
+  position: fixed;
+}
+
+.peer\/menu:checked ~ .peer-checked\/menu\:right-3 {
+  right: 0.75rem;
+}
+
+.peer\/menu:checked ~ .peer-checked\/menu\:right-4 {
+  right: 1rem;
 }
 
 .peer\/menu:checked ~ .peer-checked\/menu\:bg-close-menu {

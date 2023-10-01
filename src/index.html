@@ -26,7 +26,7 @@
 
                 <input type="checkbox" id="menu" class="peer/menu hidden">
                 <label for="menu"
-                    class="w-10 h-10 bg-open-menu bg-cover bg-center cursor-pointer rounded-lg bg-green-color peer-checked/menu:bg-close-menu transition-all z-10 md:hidden"></label>
+                    class="w-10 h-10 bg-open-menu bg-cover bg-center cursor-pointer rounded-lg bg-green-color peer-checked/menu:bg-close-menu transition-all z-10 md:hidden peer-checked/menu:right-4 right-4 fixed"></label>
 
                 <ul class="fixed inset-0 bg-menu-color px-[5%] grid auto-rows-max justify-items-center content-center clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 gap-6
                     
@@ -239,6 +239,22 @@
         <footer class="py-24 text-center">
             <p class="text-xl text-gray-color">&copy; Daniel Uribe 2023</p>
         </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Obtén la referencia al checkbox y a los elementos <li>
+                const checkbox = document.getElementById("menu");
+                const menuItems = document.querySelectorAll("ul li");
+
+                // Agrega un evento de clic a cada elemento <li>
+                menuItems.forEach((item) => {
+                    item.addEventListener("click", () => {
+                        // Desmarca el checkbox cuando se hace clic en un elemento <li>
+                        checkbox.checked = false;
+                    });
+                });
+            });
+        </script>
 
 
 
