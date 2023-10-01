@@ -8,6 +8,16 @@
     }
 }
 
+@layer components {
+    .icons-container {
+        @apply p-4 aspect-square bg-card-color w-max rounded-full
+    }
+
+    .icons {
+        @apply fill-green-color w-20 mx-auto
+    }
+}
+
 @layer utilities {
 
     .clip-circle-0 {
